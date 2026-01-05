@@ -21,7 +21,7 @@ Hosting: All scripts and Terraform modules stored in a GitHub repository and exe
 
 ## AWS Setup
 
-# 1)IAM Role & Policy :
+**1)IAM Role & Policy :**
 Created IAM role for Lambda with trust policy for lambda.amazonaws.com.
 Attached a custom IAM policy granting read‑only access to the existing S3 bucket (s3:ListBucket, s3:GetObject).
 
@@ -69,6 +69,7 @@ terraform init
 terraform plan
 
 terraform apply.
+
 
 
 
