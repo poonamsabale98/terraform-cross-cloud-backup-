@@ -48,7 +48,7 @@ Created a Storage Account with:Standard tier
 **3)Blob Container:**
 Created a private Blob container for backups.
 
-# 4)SAS Token :
+**4)SAS Token :**
 Configured SAS token generation for secure uploads if required.
 
 ## Terraform Setup
@@ -64,11 +64,13 @@ Declared all variables in variables.tf.
 Exposed Azure Blob container URL for verification.
 
 **4)Execution :**
+
 terraform init
 
 terraform plan
 
 terraform apply.
+
 
 
 
