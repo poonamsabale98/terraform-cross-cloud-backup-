@@ -20,6 +20,7 @@ Orchestration: Terraform-managed multi-cloud infrastructure
 Hosting: All scripts and Terraform modules stored in a GitHub repository and executed on an instance with Terraform
 
 ## AWS Setup
+
 # 1)IAM Role & Policy :
 Created IAM role for Lambda with trust policy for lambda.amazonaws.com.
 Attached a custom IAM policy granting read‑only access to the existing S3 bucket (s3:ListBucket, s3:GetObject).
@@ -34,7 +35,8 @@ Attached Lambda as the target.
 Added permission for EventBridge to invoke Lambda.
 
 ## Azure Setup
-# 1) Resource Group:
+
+# 1)Resource Group:
 Provisioned a new Resource Group using Terraform.
 
 # 2)Storage Account:
@@ -51,7 +53,7 @@ Configured SAS token generation for secure uploads if required.
 
 ## Terraform Setup
 
-# 1) Providers :
+# 1)Providers :
 Configured AWS and Azure providers in providers.tf.
 Used variables for region, subscription ID, tenant ID, etc.
 
@@ -63,8 +65,11 @@ Exposed Azure Blob container URL for verification.
 
 # 4)Execution :
 terraform init
+
 terraform plan
+
 terraform apply.
+
 
 
 
