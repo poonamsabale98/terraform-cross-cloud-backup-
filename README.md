@@ -8,10 +8,15 @@ Automate cross‑cloud backup so that data from an existing AWS S3 bucket is reg
 ## Architecture
 
 Source: Existing AWS S3 bucket (read-only)
+
 Compute: AWS Lambda function (Python handler)
+
 Scheduler: AWS EventBridge rule (e.g., every 4 hours)
+
 Destination: Azure Blob Storage (private container in a Storage Account)
+
 Orchestration: Terraform-managed multi-cloud infrastructure
+
 Hosting: All scripts and Terraform modules stored in a GitHub repository and executed on an instance with Terraform
 
 ## AWS Setup
@@ -51,4 +56,5 @@ Created a Storage Account with:Standard tier
 4)Execution :terraform init
              terraform plan
              terraform apply.
+
 
