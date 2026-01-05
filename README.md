@@ -40,9 +40,9 @@ Added permission for EventBridge to invoke Lambda.
 Provisioned a new Resource Group using Terraform.
 
 **2)Storage Account:**
-Created a Storage Account with:Standard tier
-                               LRS replication
-                               HTTPS‑only enforced
+Created a Storage Account with:Standard tier,
+                               LRS replication,
+                               HTTPS‑only enforced,
                                Encryption at rest enabled
 
 **3)Blob Container:**
@@ -70,6 +70,7 @@ terraform init
 terraform plan
 
 terraform apply.
+
 
 
 
