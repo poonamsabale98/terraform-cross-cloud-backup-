@@ -1,11 +1,11 @@
 # AWS settings
 variable "aws_region" {
-  description = "AWS region where resources will be created"
+  description = "ap-southeast-2"
   type        = string
 }
 
 variable "s3_bucket_name" {
-  description = "Name of the existing S3 bucket to back up"
+  description = "my_aws_bucket"
   type        = string
 }
 
