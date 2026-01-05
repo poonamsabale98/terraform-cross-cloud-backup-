@@ -11,19 +11,19 @@ variable "s3_bucket_name" {
 
 # Azure settings
 variable "azure_subscription_id" {
-  description = "Azure subscription ID"
+  description = "7aed63a1-1902-416f-9a09-820744c8b99e"
   type        = string
 }
 
 variable "azure_tenant_id" {
-  description = "Azure tenant ID"
+  description = "f3d79d4d-8616-4a4d-b041-91d3c5d4d882"
   type        = string
 }
 
 variable "azure_location" {
-  description = "Azure region where resources will be created"
-  type        = string
-}
+  description = "ACentral India"
+  type        = string 
+  }
 
 variable "azure_rg_name" {
   description = "Name of the Azure Resource Group"
